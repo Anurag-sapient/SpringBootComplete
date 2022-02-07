@@ -1,0 +1,107 @@
+spring-framework
+
+springboot--->
+-saves configuration time
+-extension of spring-framework
+-starter tempelates helps in jdbc,jpa,hibernate
+-server embedded=jar file(production ready) instead of war file which was problem with spring-framework
+-
+
+
+depenency injection-
+-classes handlede by springboot
+-inversion of control-instead of creating the objects framework will create the objects 
+-beans/objects stored in container 
+
+start-
+start.spring.io
+
+dependency added-
+-h2 database
+-springweb
+-springdevtools
+
+we can change port of running of tomcat server-
+using application.properties->
+server.port=9090
+
+@component -we can add a class to spring container and get the class whenever we need it
+controller-stereotype-behave as component also
+RestController-return always rest body(rest endpoints) + component
+RequestMapping- toget requests from websites
+GetMapping for particular type of mapping
+
+
+using command line we can also run springboot:
+-mvn spring-boot:run
+-localhost//9090/h2-console->for getting online console
+
+for live changes on websites-
+-add devtool dependency
+-advanced setting -changes visile even when app is running-tick
+-compiler- save changes settings- tick
+
+-rest api(post,get,put,delete)--> service layer(where all logics written) -->database/repository layer-->database
+
+@Entity- to interract with database 
+and give @ID for unique identification
+
+@RequestBody ->gives the json into object we require
+@Autowired -->object automatically made even without doing manually by new keyword done by springboot
+
+
+-->Hibernate validation
+-pom.xml file= springboot starter validation
+-we add these to perform certain type of validation on the parameters such that if that fulfilled then it will not take the input
+
+-->loggers
+- we can do logging using logger from class loggerFactory sl4j logging
+
+-->Lombok(reduces the boiler plate code)=we dont need to create equalto getter setter tostring hashcode
+-add lombok dependency(pom.xml)
+-add in plugin of lombok too(pom.xml)
+-add in extension of ide also lombok
+-@Data -annotation for making all getter setter tostring
+-@NoArgsConstructor- for no arguement constructor
+-@AllArgsConstructor- for all arguement constructor
+-@Builder- 
+
+Exception Handling-
+-handling the errors encountered or exception to prevent pass in ui
+
+@ControllerAdvice-all the controllers for which exception handling required
+@ResponseStatus-
+@ExceptionHandler
+
+
+H2Console to MYSQL-(shift)-application.properties-file change only
+
+
+TESTING-(springboot starter test)-dependency
+
+Mocking in unit testing
+-@Builder- helps us getting without using all parameter to create objects in Lombok
+-service layer mocked/testing
+-using service layer iterface generate test casefile
+-@BeforeAll- for every function it will be done first
+-@Beforeach-for every function this will be done first happens only for function which is just below it
+
+
+application.properties - we could declare varaible used everywhere -globals
+
+Application.yml file
+-
+
+
+Multiple profile run
+Creating jar files--> mvn clean install (all tc must pass)
+run jar files & for particular production,deployement--> java -jar file_name.jar --spring.profile.active=prod
+
+Actuator
+-
+
+
+
+
+
+
