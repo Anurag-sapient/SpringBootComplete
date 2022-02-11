@@ -1,0 +1,29 @@
+JPA
+
+->ORM(object relationship model)-hibernate
+->connect object to tables
+
+tables are linked together -->
+one to one =course and course material
+one to many=teacher and courses
+many to many=student and courses
+
+@Table(name="") & Column(name="")-->we can define the table name and column also
+
+@Embeddable class from which tables is embedded into another that is connected && @Embedded used where it is embedded
+
+@Atribute overrides for matching with the already created tables_column
+
+@Query and and @Query with native
+
+?1=>to match paramter to value or @Param("email")String emailid for matching with email in query
+
+
+
+
+
+
+
+
+
+
