@@ -18,6 +18,18 @@ many to many=student and courses
 
 ?1=>to match paramter to value or @Param("email")String emailid for matching with email in query
 
+@Transactional and @Modifying ->for update and insert with query
+
+
+JPA Relationships->
+
+one to one->
+courseid to course
+
+@OnetoOne ->on the object with mapping is done
+
+@JoinColumn we need foreign key to refrencing to another table
+
 
 
 
