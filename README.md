@@ -9,6 +9,8 @@
 - SpringbootApplication - makes use of tomcat server and runs on default 
 - Spring uses server like tomcat, for data base connection JDBC, Spring security
 
+- In spring for calling services or repository we never make use of new instead we use Autowiring feature for service- using @Service , using repo-@Repository and for any other class we can add into confirguration folder defining bean and autowiring from there using component
+
 ## Dependency Injection -(IOC)= spring is responsible for creating object by mentioning class=@Component and using getBean to create object
 @Autowired - inject the dependency without manual configuration 
 - Without using new keyword by creating bean of object in bean pool we can inject the dependency using dependency  injection
